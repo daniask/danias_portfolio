@@ -139,9 +139,13 @@ resume:
   summary:             Summary
   keywords:            Keywords
   print:               Print
+  projects:            Projects
+  projects_title:      <!--position--> at <!--organization-->
   download_pdf:        PDF
   download_vcf:        vCard
   download_json:       JSON
+  workshops:           Workshops
+  workshops_title:     <!--position--> at <!--organization-->
   icons:
     fallback:          icon-link
     location:          icon-location
@@ -153,6 +157,7 @@ resume:
     website:           icon-home3
     work:              icon-briefcase
     volunteer:         icon-earth
+    projects:          icon-earth
     education:         icon-library
     awards:            icon-trophy
     publications:      icon-book
@@ -160,3 +165,4 @@ resume:
     languages:         icon-bubbles
     skills:            icon-wrench
     interests:         icon-heart
+    workshops:         icon-location
