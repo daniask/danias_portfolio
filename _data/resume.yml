@@ -2,12 +2,12 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "Danial Azam"
-  label: "Data Scientist | Software Developer"
+  name: "Dania Shahkhan"
+  label: "Visual Artist | Artist Educator"
   picture: "/assets/icons/pp.png"
-  email: "dazam92@gmail.com"
-  phone: "(+61) 405 546 662"
-  website: "https://dazam.me"
+  email: "daniashahkhan@gmail.com"
+  phone: "(+61) 478 183 120"
+  website: "https://daniashahkhan.com"
   summary: ""    # Richard hails from Tulsa.
   location:
     address: "435 Marrickville Road"
@@ -20,21 +20,19 @@ basics:
       username: "Dazam92"
       url: "https://twitter.com/Dazam92"
     - network: "LinkedIn"
-      username: "dazaman"
+      username: "daniashahkhan"
       url: "https://www.linkedin.com/in/dazaman/"
 work:
-  - company: "Basin Genesis Hub - University of Sydney"
-    position: "Research Software Developer"
-    website: "http://bgh.org.au/"
-    startDate: "2017-08-01"
+  - company: "Poiesis.socialart"
+    position: "Co-Founder"
+    website: "http://"
+    startDate: "2019-09-01"
     endDate: ""
     summary: >
-      The BGH is an established leader in e-Geoscience services and software in a basin analysis and management context.
+      Poiesis.socialart is currently a  digital platform archiving socially engaged artists and their respective artworks. I, along with my collaborator, Maha Minhaj, create engaging podcasts on current events in the world and post in-depth interviews with artists from the field of social practice. 
+We conducted our first theatre-based workshop called ‘Social Play’ in December 2019. 
     highlights:
-      - "Led development and maintenance of Open-source Bayesian Inference framework in Python for Landscape modelling-Bayeslands and BayesReef."
-      - "Created parallelized framework run on High Performance Computers to efficiently sample multivariate parameter distributions."
-      - "Utilised neural networks(keras) as surrogate models to significantly curb simulation runtime with minimal losses in accuracy."
-      - "Coordinated multiple workshops in-house and at conferences on application of computational statistics frameworks in Geo-sciences."
+      - 
   - company: "Engage2"
     position: "Data Scientist"
     website: "http://engage2.com.au/"

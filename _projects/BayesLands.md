@@ -1,23 +1,25 @@
 ---
 layout: project
-title: 'BayesLands'
-caption: "BayesLands: Bayesian inference via Parallel Tempering for Badlands"
+title: 'Stills of Decay'
+caption: "Stills of Decay"
 description: >
-  Bayesian inference via Parallel Tempering for Badlands
-date: '01-01-2019'
-image: /assets/img/projects/bl_cm_likl_contour.png
+  Thesis
+date: '2018'
+image: /assets/img/projects/Dunhill_with_Trash.jpg
 links:
-  - title: BayesLands GitHub page
+  - title: Stills of Decay
     url: https://github.com/intelligentEarth/pt-Bayeslands
 sitemap: false
 ---
-Bayesian inference via Parallel Tempering for  Badlands
+Stills of Decay
 =====
 
 
 ## Overview
 
-**Ba**sin an**d** **Lan**dscape **D**ynamic**s** (**Badlands**) is a parallel TIN-based landscape evolution model, built to simulate topography development at various space and time scales. The model is capable of simulating hillslope processes (**linear** & **non-linear** diffusion), fluvial incision (*'modified'* **Stream Power Law**, **Transport Capacity Law** both for sediment  erosion/transport/deposition), spatially and temporally varying geodynamic (horizontal + vertical displacements) and climatic forces which can be used to simulate changes in base level, as well as effects of climate changes or sea-level fluctuations. The model uses  [**gFlex**](https://github.com/awickert/gFlex) package which is designed to solve elastic plate flexure for applications to Earth's lithosphere.
+'Stills of Decay' is a series of work produced at Indus Valley School of Art and Architecture for my Bachelors of Fine Art's final thesis. 
+My drawings show the eventual decay, rot or preservation of things, living and non living, discarded and neglected after use, after their purpose has left them or have, just simply expired.
+Every ‘thing’ had its story and in a snapshot of a drawing is frozen in time. I hoped to capture the inevitability of decay and death and its toll on the things around us. It’s toll on a flower; that started in a vase and ended in a bin next to a Dun-hill.
 
 ![Rain Posterior Plot](/assets/img/projects/bl_rain_posterior.png)
 ![Rain Trace Plot](/assets/img/projects/bl_rain_trace.png)
