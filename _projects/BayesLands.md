@@ -4,7 +4,7 @@ title: 'Stills of Decay'
 caption: "Stills of Decay"
 description: >
   Thesis
-date: '2018'
+date: '2018-02-01'
 image: /assets/img/projects/Dunhill_with_Trash.jpg
 links:
   - title: Stills of Decay
