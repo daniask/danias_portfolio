@@ -15,6 +15,7 @@
 
 import { fromEvent, NEVER, combineLatest, of } from 'rxjs';
 import { map, tap, switchMap, startWith, share, finalize, mergeAll } from 'rxjs/operators';
+import scrollIntoView from 'scroll-into-view-if-needed';
 
 import {
   BREAK_POINT_DYNAMIC,
@@ -46,7 +47,7 @@ import {
     share(),
   );
 
-  combineLatest(toc$, isLarge$)
+  combineLatest([toc$, isLarge$])
     .pipe(
       switchMap(([toc, isLarge]) => {
         if (!toc || !isLarge) return NEVER;
@@ -67,14 +68,14 @@ import {
             }
           }),
           finalize(() => {
-            toc.classList.remove('affix');
+            scrollspy.parentNode.removeChild(scrollspy);
           }),
         );
       }),
     )
     .subscribe();
 
-  combineLatest(toc$, isLarge$)
+  combineLatest([toc$, isLarge$])
     .pipe(
       switchMap(([toc, isLarge]) => {
         if (!toc || !isLarge) return NEVER;
@@ -82,12 +83,15 @@ import {
         const intersecting = new Set();
         const top = new WeakMap();
 
+        const hasGuardRail = getComputedStyle(toc).overscrollBehaviorY === 'contain';
+
         const toObserve = Array.from(toc.querySelectorAll('li'))
           .map((el) => el.children[0].getAttribute('href') || '')
           .map((hash) => document.getElementById(hash.substr(1)))
           .filter((el) => !!el);
 
         let init = true;
+        let timer;
         return createIntersectionObservable(toObserve).pipe(
           tap((entries) => {
             if (init) {
@@ -107,7 +111,17 @@ import {
                 el.style.fontWeight = '';
               });
               const el = toc.querySelector(`a[href="#${curr.id}"]`);
-              if (el) el.style.fontWeight = 'bold';
+              if (el) {
+                el.style.fontWeight = 'bold';
+                if (hasGuardRail) {
+                  clearTimeout(timer);
+                  timer = setTimeout(() => {
+                    if (toc.classList.contains('affix')) {
+                      scrollIntoView(el, { scrollMode: 'if-needed' });
+                    }
+                  }, 100);
+                }
+              }
             }
           }),
           finalize(() => {
