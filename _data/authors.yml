@@ -8,11 +8,7 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    
-    Open `_data/authors.yml` to edit this text.
+    Dania Shahkhan is an Artist, Filmmaker, and Writer.
 
   # This photo will be used in the about section
   picture:
@@ -43,7 +39,7 @@ author1:
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
-    # behance:         <username>
+    behance:         daniaskart
     # deviantart:      <username>
     # ello:            <username>
     # twitch:          <username>
@@ -65,18 +61,3 @@ author1:
     # paypal:          <username>
     # download:        <url>
     # keybase          <username>
-
-# Another author (optional)
-author2:
-  name:              <firtname> <lastname>
-  email:             <mail@domain.tld>
-  about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-    Open `_data/authors.yml` to edit this text.
-
-  picture:           https://placehold.it/128x128
-  twitter:           <username>
-  github:            <username>
